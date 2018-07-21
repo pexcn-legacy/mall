@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mall-common" />
-        <module name="mall-manager" />
+        <module name="mall-manager-dao" />
+        <module name="mall-manager-entity" />
+        <module name="mall-manager-interface" />
+        <module name="mall-manager-service" />
+        <module name="mall-manager-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8" />

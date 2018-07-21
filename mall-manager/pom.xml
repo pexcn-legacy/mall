@@ -11,5 +11,21 @@
     </parent>
 
     <artifactId>mall-manager</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>mall-manager-dao</module>
+        <module>mall-manager-entity</module>
+        <module>mall-manager-service</module>
+        <module>mall-manager-interface</module>
+        <module>mall-manager-web</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>me.pexcn</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
 </project>

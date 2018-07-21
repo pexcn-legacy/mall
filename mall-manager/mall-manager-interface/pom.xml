@@ -6,11 +6,11 @@
 
     <parent>
         <groupId>me.pexcn</groupId>
-        <artifactId>mall</artifactId>
+        <artifactId>mall-manager</artifactId>
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>mall-common</artifactId>
+    <artifactId>mall-manager-interface</artifactId>
     <packaging>jar</packaging>
 
 </project>
