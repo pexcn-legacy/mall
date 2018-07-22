@@ -13,4 +13,11 @@
     <artifactId>mall-manager-interface</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>me.pexcn</groupId>
+            <artifactId>mall-manager-entity</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+    </dependencies>
 </project>
