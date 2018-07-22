@@ -22,6 +22,8 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+            <!-- Fix: mvn tomcat7:run -->
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
