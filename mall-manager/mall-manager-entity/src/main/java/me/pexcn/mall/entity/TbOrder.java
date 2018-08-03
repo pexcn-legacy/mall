@@ -1,8 +1,9 @@
 package me.pexcn.mall.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbOrder {
+public class TbOrder implements Serializable {
     private String orderId;
 
     private String payment;
