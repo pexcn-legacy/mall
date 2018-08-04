@@ -11,6 +11,7 @@
     <dubbo:application name="mall-manager-service"/>
     <dubbo:registry protocol="zookeeper" address="omega.pexcn.me:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
+    <!-- timeout="300000" -->
     <dubbo:service interface="me.pexcn.mall.interfaces.ItemService" ref="itemServiceImpl"/>
 
 </beans>
