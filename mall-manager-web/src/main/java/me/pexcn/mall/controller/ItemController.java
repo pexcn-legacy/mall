@@ -1,5 +1,6 @@
 package me.pexcn.mall.controller;
 
+import me.pexcn.mall.entity.EasyUIDataGridResult;
 import me.pexcn.mall.entity.TbItem;
 import me.pexcn.mall.interfaces.ItemService;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,5 +20,10 @@ public class ItemController {
     @RequestMapping("/item/{itemId}")
     public TbItem getItemById(@PathVariable Long itemId) {
         return itemService.getItemById(itemId);
+    }
+
+    @RequestMapping("/item/list")
+    public EasyUIDataGridResult getItemList(int page, int rows) {
+        return itemService.getItemList(page, rows);
     }
 }
