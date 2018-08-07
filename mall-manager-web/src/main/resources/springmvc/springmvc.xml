@@ -19,5 +19,6 @@
     <dubbo:application name="mall-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="omega.pexcn.me:2181"/>
     <dubbo:reference interface="me.pexcn.mall.interfaces.ItemService" id="itemService"/>
+    <dubbo:reference interface="me.pexcn.mall.interfaces.ItemCategoryService" id="itemCategoryService"/>
 
 </beans>

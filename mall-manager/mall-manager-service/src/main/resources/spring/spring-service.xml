@@ -5,13 +5,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:component-scan base-package="me.pexcn.mall.interfaces"/>
-
     <context:component-scan base-package="me.pexcn.mall.service"/>
 
     <dubbo:application name="mall-manager-service"/>
     <dubbo:registry protocol="zookeeper" address="omega.pexcn.me:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
+
     <!-- timeout="300000" -->
     <dubbo:service interface="me.pexcn.mall.interfaces.ItemService" ref="itemServiceImpl"/>
+    <dubbo:service interface="me.pexcn.mall.interfaces.ItemCategoryService" ref="itemCategoryServiceImpl"/>
 
 </beans>
