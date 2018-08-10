@@ -1,0 +1,5 @@
+tracker_server=<ip_address:port>
+http.tracker_http_port=<port>
+connect_timeout=5
+network_timeout=10
+charset=UTF-8

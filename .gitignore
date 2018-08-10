@@ -95,3 +95,4 @@ target/
 
 # exclude mysql password
 db.properties
+client.conf
