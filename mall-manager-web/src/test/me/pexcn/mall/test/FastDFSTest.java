@@ -1,5 +1,6 @@
 package me.pexcn.mall.test;
 
+import me.pexcn.mall.utils.FastDFSClient;
 import org.csource.common.MyException;
 import org.csource.fastdfs.*;
 import org.junit.Test;
@@ -19,6 +20,13 @@ public class FastDFSTest {
         StorageServer storageServer = null;
         StorageClient storageClient = new StorageClient(trackerServer, storageServer);
         String[] results = storageClient.upload_file("C:\\Users\\Administrator\\Desktop\\test.png", "png", null);
+        System.out.println(Arrays.toString(results));
+    }
+
+    @Test
+    public void testFastDFSUtils() throws Exception {
+        FastDFSClient client = new FastDFSClient("D:\\Dev\\pexcn\\mall\\mall-manager-web\\src\\main\\resources\\fastdfs\\client.conf");
+        String[] results = client.uploadFile("test".getBytes());
         System.out.println(Arrays.toString(results));
     }
 }

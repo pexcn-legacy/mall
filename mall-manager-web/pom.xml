@@ -16,6 +16,11 @@
     <dependencies>
         <dependency>
             <groupId>me.pexcn</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>me.pexcn</groupId>
             <artifactId>mall-manager-interface</artifactId>
             <version>0.0.1</version>
         </dependency>
@@ -85,10 +90,6 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.bestwu</groupId>
-            <artifactId>fastdfs-client-java</artifactId>
         </dependency>
     </dependencies>
 
